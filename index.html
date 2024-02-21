@@ -27,7 +27,10 @@
                     Email List
                 </h1>
 
-                <ul class="list-group">
+                <ul 
+                    v-show="emails.length == 10"
+                    class="list-group"
+                >
 
                     <li 
                         v-for="currentEmail in emails"
