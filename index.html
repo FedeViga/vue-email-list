@@ -9,7 +9,7 @@
 
     <title>Vue Email List</title>
 </head>
-<body>
+<body class="bg-secondary">
 
     <!-- vue -->
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
@@ -21,9 +21,17 @@
 
         <div class="container">
 
-            <h1>
-                Email List
-            </h1>
+            <div class="card mt-5 p-5 text-center text-white bg-dark">
+
+                <h1 class="mb-4">
+                    Email List
+                </h1>
+
+                <span>
+                    {{email}}
+                </span>
+
+            </div>
 
         </div>
 
