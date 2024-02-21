@@ -9,7 +9,7 @@
 
     <title>Vue Email List</title>
 </head>
-<body class="bg-secondary">
+<body class="bg-dark">
 
     <!-- vue -->
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
@@ -21,15 +21,24 @@
 
         <div class="container">
 
-            <div class="card mt-5 p-5 text-center text-white bg-dark">
+            <div class="card col-12 col-md-9 mx-auto mt-5 p-3 text-center text-white bg-black shadow-lg">
 
-                <h1 class="mb-4">
+                <h1 class="mb-3">
                     Email List
                 </h1>
 
-                <span>
-                    {{email}}
-                </span>
+                <ul class="list-group">
+
+                    <li 
+                        v-for="currentEmail in emails"
+                        class="list-group-item list-group-item-action bg-success border border-dark text-white"
+                    >
+
+                        {{currentEmail}}
+
+                    </li>
+                    
+                </ul>
 
             </div>
 
